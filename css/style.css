@@ -1,0 +1,508 @@
+:root{
+    --bg: #fbf7ee;           
+    --card: #fffaf0;         
+    --stroke: #e5e1d8;   
+    --text: #2f2f2f;        
+    --muted: #6b6b6b;       
+    --yellow: #f6e7b2;      
+    --yellow2: #f2d98a;    
+    --shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* tarjetas del header/footer */
+.header-card{
+    background: var(--card);
+    border: 1px solid var(--stroke);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+.footer-card{
+    background: var(--card);
+    border: 1px solid var(--stroke);
+    border-radius: 14px;
+}
+
+/* botones minimalistas */
+.btn-reto{
+    background: var(--yellow);
+    border: 1px solid #e7d8a8;
+    color: var(--text);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(0,0,0,.05);
+    transition: transform .08s ease, box-shadow .12s ease, background .12s ease;
+}
+
+/* hover simple */
+.btn-reto:hover{
+    background: var(--yellow2);
+    border-color: #e0c97f;
+    color: var(--text);
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(0,0,0,.07);
+}
+
+/* focus para accesibilidad */
+.btn-reto:focus{
+    box-shadow: 0 0 0 .2rem rgba(242, 217, 138, .6);
+}
+
+/* pantallas muy pequeñas*/
+@media (max-width: 360px){
+    .btn-reto{
+        padding: 12px 12px;
+        border-radius: 12px;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* RETO 1*/
+
+/* boton volver */
+.btn-back{
+    background: #f3f1ec;
+    border: 1px solid var(--stroke);
+    color: var(--text);
+    border-radius: 12px;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-back:hover{
+    background: #ebe7de;
+    color: var(--text);
+}
+
+/* boton principal del reto */
+.btn-cta{
+    background: var(--yellow);
+    border: 1px solid #e5d7a7;
+    color: var(--text);
+    border-radius: 12px;
+    padding: 10px 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-cta:hover{
+    background: var(--yellow2);
+    color: var(--text);
+}
+
+
+.img-card{
+    border-radius: 0px;
+    border: 1px solid var(--stroke);
+    box-shadow: var(--shadow);
+}
+
+/* RETO 2*/
+
+.icon-unicon{
+    font-size: 40px;
+    color: #2f2f2f;
+}
+
+/* fondo  */
+.reto2-section{
+    background: #f2f2f2;
+    border-radius: 18px;
+}
+
+/* titulo grande */
+.big-title{
+    font-weight: 900;
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    letter-spacing: .5px;
+}
+
+/* circulo naranja fuerte */
+.icon-circle{
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 999px;
+    background: #f58220;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* icono blanco */
+.icon-unicon{
+    font-size: 42px;
+    color: white;
+}
+
+/* titulo naranja */
+.icon-title{
+    font-weight: 800;
+    color: #f58220;
+    margin-bottom: 8px;
+}
+
+/* boton naranja fuerte */
+.btn-cta{
+    background: #f58220;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 10px 22px;
+}
+
+.btn-cta:hover{
+    background: #e67010;
+    color: white;
+}
+
+/* reto 3 */
+
+.lineita{
+    width: 70px;
+    height: 3px;
+    background: #f58220;
+    margin: 0 auto;
+    border-radius: 99px;
+}
+
+.info-card{
+    border: 1px solid var(--stroke);
+    border-radius: 16px;
+    padding: 18px 18px;
+    background: #ffffff66;
+}
+
+.info-title{
+    font-weight: 900;
+    letter-spacing: .2px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.btn-info-red{
+    background: #e31818;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 9px 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-info-red:hover{
+    background: #c81212;
+    color: #fff;
+}
+
+/* reto 4 */
+.benefit-card{
+    border: 1px solid var(--stroke);
+    border-radius: 18px;
+    padding: 18px 14px;
+    background: #ffffff66;
+}
+
+.benefit-icon{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 12px auto;
+    border-radius: 999px;
+    border: 1px solid #bfe6ea;
+    background: #e8fbfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-icon i{
+    font-size: 34px;
+    color: #3aaab6;
+}
+
+.benefit-title{
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+}
+
+/* reto 5 */
+.color-wrap{
+    border-radius: 0;
+    overflow: hidden; /* para que no queden bordes raros */
+    border: 1px solid #e7e2d7;
+}
+
+/* padding interno para que se vea como el ejemplo */
+.color-col{
+    padding: 22px 18px;
+    min-height: 220px;
+}
+
+.color-title{
+    font-weight: 900;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.color-text{
+    margin: 0;
+    line-height: 1.45;
+}
+
+/* colores fuertes como el ejemplo */
+.color-red{
+    background: #e51515;
+    color: #fff;
+}
+
+.color-green{
+    background: #9ac31b;
+    color: #fff;
+}
+
+.color-orange{
+    background: #f39a19;
+    color: #fff;
+}
+
+/* para que en cel se lea bien */
+@media (max-width: 576px){
+    .color-col{
+        min-height: auto;
+        padding: 18px 16px;
+    }
+}
+
+/* reto 6 */
+.hero-banner{
+    height: 70vh; /* se adapta bien en laptop */
+    min-height: 450px;
+
+    /* imagen de fondo */
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+
+    /* overlay de color */
+    background-color: rgba(0,0,0,0.45);
+    background-blend-mode: multiply;
+
+    /* sombra para dar profundidad */
+    box-shadow: inset 0 0 120px rgba(0,0,0,0.6);
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 2rem;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hero-subtitle{
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* que el texto crezca en pantallas grandes */
+@media (min-width: 768px){
+    .hero-title{
+        font-size: 2.8rem;
+    }
+}
+
+/* reto 7 */
+
+.reto7-card{
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--stroke);
+    background: #fff;
+}
+
+.reto7-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.reto7-cap{
+    background: rgba(0,0,0,.55);
+}
+
+.reto7-cap h3{
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.reto7-cap p{
+    margin: 0;
+    font-size: .95rem;
+}
+
+
+.reto7-label{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: .95rem;
+    color: var(--text);
+}
+
+/* reto 8 */
+.hero-8{
+    min-height: 62vh;
+    padding: 60px 0;
+
+    background-image: url("../images/banner2.jpg");
+    background-size: cover;
+    background-position: center;
+
+    background-color: rgba(0,0,0,.45);
+    background-blend-mode: multiply;
+
+    box-shadow: inset 0 0 140px rgba(0,0,0,.6);
+}
+
+.hero8-content{
+    max-width: 520px;
+}
+
+.hero8-title{
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: .5px;
+    line-height: 1.05;
+    margin-bottom: 14px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.hero8-text{
+    color: rgba(255,255,255,.85);
+    margin: 0;
+    max-width: 520px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+.hero8-buttons .btn{
+    border-radius: 0;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+/* reto 9 */
+.logo-card{
+    display: block;
+    text-decoration: none;
+    border: 1px solid var(--stroke);
+    border-radius: 16px;
+    background: #ffffffa6;
+    padding: 16px;
+    box-shadow: 0 8px 18px rgba(0,0,0,.04);
+    transition: transform .08s ease, box-shadow .12s ease;
+    height: 100%;
+}
+
+.logo-card:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(0,0,0,.06);
+}
+
+.logo-img{
+    width: 100%;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-name{
+    margin-top: 10px;
+    font-weight: 800;
+    color: var(--text);
+    text-align: center;
+    font-size: .95rem;
+}
+
+/* reto 10 */
+.featured-blog{
+    background: #efefef;
+    border-radius: 14px;
+    border: 1px solid #e2e2e2;
+}
+
+.featured-title{
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.featured-text{
+    color: #444;
+    line-height: 1.55;
+    margin-bottom: 18px;
+}
+
+.mini-article{
+    border: 1px solid var(--stroke);
+    border-radius: 14px;
+    padding: 16px;
+    background: #fff;
+}
+
+.mini-title{
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.mini-img{
+    background: #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 12px;
+}
+
+.mini-img img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.mini-text{
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+/* boton verde a pdf */
+.btn-green{
+    background: #2e8b57;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 8px;
+    padding: 9px 14px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+}
+
+.btn-green:hover{
+    background: #257247;
+    color: #fff;
+}

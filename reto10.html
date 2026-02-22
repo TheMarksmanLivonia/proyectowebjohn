@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reto 10</title>
+
+    <!-- bootstrap base -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- css propio -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <header class="py-4">
+        <div class="container">
+            <div class="box">
+                <h1 class="title">Reto #10</h1>
+                <p class="subtitle mb-0">Diagramación de un blog</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="container pb-5">
+
+        <div class="mb-3">
+            <a href="index.html" class="btn btn-back">Volver al menú</a>
+        </div>
+
+        <div class="box p-4 p-md-5">
+
+            <!-- articulo destacado -->
+            <div class="featured-blog p-4 p-md-5 mb-4">
+                <h2 class="featured-title">Artículo destacado de la semana</h2>
+
+                <p class="featured-text">
+                    Esta semana el tema principal es cómo estructurar una página web clara y responsive usando Bootstrap.
+                    La idea es que el usuario encuentre lo importante rápido, con secciones limpias y botones visibles.
+                    También se repasan detalles como el uso de filas y columnas, y cómo evitar espacios no deseados.
+                </p>
+
+                <a href="https://ucenfotec.ac.cr/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary px-4">Leer más</a>
+            </div>
+
+            <!-- 2 articulos abajo -->
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6">
+                    <div class="mini-article h-100">
+                        <h3 class="mini-title">Cómo elegir buenas imágenes para un sitio</h3>
+
+                        <div class="mini-img">
+                            <img src="images/blog1.png" alt="Imágenes para web" class="img-fluid">
+                        </div>
+
+                        <p class="mini-text">
+                            Una imagen bien elegida ayuda a comunicar mejor el mensaje. Lo ideal es usar fotos con buena
+                            resolución, que no pesen demasiado, y que tengan sentido con el contenido del sitio. También
+                            es importante mantener un estilo consistente en todas las secciones.
+                        </p>
+
+                        <a href="pdf/guia-blog.pdf" target="_blank" class="btn btn-green">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="mini-article h-100">
+                        <h3 class="mini-title">Checklist rápido para páginas responsive</h3>
+
+                        <div class="mini-img">
+                            <img src="images\blog2.jpg" alt="Checklist responsive" class="img-fluid">
+                        </div>
+
+                        <p class="mini-text">
+                            Antes de entregar un trabajo, se recomienda revisar el sitio en móvil, tablet y desktop.
+                            Validar que no haya scroll horizontal, que los botones sean fáciles de tocar, y que las
+                            imágenes se adapten correctamente. Esto evita errores comunes al presentar.
+                        </p>
+
+                        <a href="pdf/checklist-blog.pdf" target="_blank" class="btn btn-green">Leer más</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="box foot p-3">
+                <small class="text-muted">Tarea 2, Febrero 2026 - Johnny Fernandez</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
